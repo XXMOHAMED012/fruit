@@ -35,6 +35,29 @@ ul{
     padding: 0;
 }
 
+.main-title{
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title i{
+    margin-right: 25px;
+    font-size: 40px;
+    color: orange;
+    margin-top: 5px;
+}
+
+.main-title h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #666;
+}
+
 .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -149,7 +172,7 @@ ul{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(126, 57, 0, 0.4);
+    background-color: rgba(126, 57, 0, 0.2);
 }
 
 .header .container{
@@ -227,7 +250,6 @@ ul{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #EEE;
     transition: var(--main-transition);
     box-shadow: 0 10px 10px #ddd;
     display: none;
@@ -236,7 +258,7 @@ ul{
 
 .header .container .top ul li:hover ul{
     display: flex;
-    background-color: #EEE;
+    background-color: #FaFaFa;
     border-radius: 5px 5px 0 0;
     border-bottom: 3px solid var(--main-color);
     animation: header-menu 0.25s linear forwards;
@@ -245,6 +267,7 @@ ul{
 .header .container .top ul li ul li{
     border-bottom: 1px solid #BBB;
     width: 100%;
+    transition: var(--main-transition);
 }
 
 .header .container .top ul li ul li a{
@@ -252,6 +275,10 @@ ul{
     font-size: 17px;
     font-weight: 600;
     color: #888;
+}
+
+.header .container .top ul li ul li:hover{
+    background-color: #F4F4F4;
 }
 
 .header .container .top ul li ul li:hover a{
@@ -295,7 +322,7 @@ ul{
 /* Start Menu */
 
 .menu{
-    background-color: var(--boxg);
+    background-color: #333;
 }
 
 .menu .container{
@@ -321,12 +348,12 @@ ul{
     font-size: 17px;
     font-weight: 600;
     padding: 10px 5px;
-    color: #666;
+    color: #AAA;
     transition: var(--main-transition);
 }
 
 .menu .container ul > li:hover > a{
-    color: black;
+    color: #FFF;
 }
 
 .menu .container ul > li .list{
@@ -450,7 +477,7 @@ ul{
 .products .container{
     display: grid;
     grid-template-columns: repeat( auto-fill , minmax( 250px , 1fr ) ) ;
-    gap: 16px;
+    gap: 20px;
 }
 
 .products .container .box{
@@ -460,13 +487,13 @@ ul{
     flex-direction: column;
     border-radius: 20px !important;
     overflow: hidden;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
     transition: var(--main-transition);
 }
 
 .products .container .box:hover{
     transform: translateY(-8px);
-    box-shadow: 0px 3px 30px 4px rgba(0,0,0,0.25);
+    box-shadow: 0px 3px 27px 5px rgba(130, 149, 255, 0.2);
 }
 
 .products .container .box:hover a h2{
@@ -501,7 +528,7 @@ ul{
     align-items: center;
     justify-content: space-around;
     position: relative;
-    background-color: var(--section-background);
+    background-color: #ebf9ff;
     padding: 20px 30px;
     border-radius: 10px;
 }
@@ -523,7 +550,7 @@ ul{
 
 .footer .container .info .img img{
     width: 80%;
-    border: 5px solid #CfCfCf;
+    /* border: 5px solid #CfCfCf; */
     border-radius: 10px;
 }
 
