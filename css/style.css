@@ -533,7 +533,6 @@ ul{
     align-items: center;
     justify-content: space-around;
     position: relative;
-    background-color: #ebf9ff;
     padding: 20px 30px;
     border-radius: 10px;
 }
@@ -550,7 +549,7 @@ ul{
 }
 
 .footer .container .info .img{
-    width: 50%;
+    width: 80%;
 }
 
 .footer .container .info .img img{
@@ -562,10 +561,11 @@ ul{
 .footer .container .info p{
     max-width: 45%;
     padding: 10px;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
     color: #777;
     line-height: 1.7;
+    word-spacing: 1px;
 }
 
 .footer .pay{
@@ -581,9 +581,9 @@ ul{
     display: block;
     width: fit-content;
     padding: 10px 25px;
-    color: #AAA;
+    color: var(--main-color);
     background-color: transparent;
-    border: 2px solid #AAA;
+    border: 2px solid var(--main-color);
     border-radius: 20px;
     font-size: 20px;
     font-weight: 600;
@@ -591,8 +591,8 @@ ul{
 }
 
 .footer .pay a:hover{
-    color: var(--main-color);
-    background-color: orange;
+    color: #FAFAFA;
+    background-color: var(--main-color);
 }
 
 .footer .pay img{
