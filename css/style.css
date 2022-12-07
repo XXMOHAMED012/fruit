@@ -443,7 +443,7 @@ ul{
 .menu .container ul > li .list > li .submenu li{
     width: 100%;
     background-color: #FaFaFa;
-    border-bottom: 1px solid #BBB;
+    border-bottom: 1px solid #AAA;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -451,7 +451,11 @@ ul{
 }
 
 .menu .container ul > li .list > li .submenu li:hover{
-    background-color: #EEE;
+    background-color: #FFF;
+}
+
+.menu .container ul > li .list > li .submenu li:hover a{
+    color: var(--main-color);
 }
 
 .menu .container ul > li .list > li .submenu li a{
@@ -459,6 +463,7 @@ ul{
     display: block;
     padding: 10px 0;
     transition: var(--main-transition);
+    color: #555;
 }
 
 .menu .container ul > li .list > li .submenu.small li a{
